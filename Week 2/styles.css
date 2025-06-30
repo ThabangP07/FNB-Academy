@@ -6,6 +6,8 @@
     width: 100%;
     height: 40px;
     background-color: cornflowerblue;
+
+    padding-top: 12px;
 }
 
 #menu a {
@@ -14,4 +16,11 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: 800;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#menu a:hover {
+    color: #bd9750;
 }
