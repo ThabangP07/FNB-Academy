@@ -4,7 +4,7 @@ FNB Academy App in collaboration with IT Varsity has offered me and other fellow
 
 Lets dive into it:
 
-## WEEK 1
+## WEEK 1 : Introduction
 
 In week 1; I was introduced to the basics of HTML, mainly:
 
@@ -57,3 +57,6 @@ In week 1; I was introduced to the basics of HTML, mainly:
 - Git and Github
 - Google Chrome
 
+## WEEK 2: The Avengers App
+
+## WEEK 3: Pine City Zoo
