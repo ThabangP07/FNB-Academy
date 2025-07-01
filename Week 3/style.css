@@ -14,3 +14,10 @@ body {
     background-image: url('images/wood-bg.png');
     background-repeat: repeat-x;
 }
+
+#header img{
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+}
