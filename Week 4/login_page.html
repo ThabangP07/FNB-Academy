@@ -16,16 +16,34 @@
             <label for="passwordInput">Password:</label>
             <input type="password" id="passwordInput"/>
             <br/>
-            <button type="submit">Log In</button>
+            <p id="message"></p>
+            <br/>
+            <button onclick="validateUser()">Log In</button>
         </form>
+
+        
 
         <script>
 
+            
             function validateUser() {
+
                 let username = document.getElementById("usernameInput").value;
                 let password = document.getElementById("passwordInput").value;
-
                 
+                checkUserCred(username, password);
+
+            }
+
+            function checkUserCred(username, password) {
+                const validUsername = "James";
+                const validPassword = "007";
+
+                if (username === validUsername && password === validPassword) {
+                    document.getElementById("message").innerHTML = "Correct, You are now logged in!";
+                } else {
+                    document.getElementById("message").innerHTML = "Username or Password are incorrect, please try again.";
+                }
             }
 
         </script>
