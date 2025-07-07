@@ -6,7 +6,11 @@
         <title>Function</title>
     </head>
     <body>
-        <h1 onclick="innerHTML = 'is awesome'">Javascript</h1>
+        <h1 onclick="if (this.innerHTML === 'Javascript') {
+            this.innerHTML = 'Is awesome';
+        } else {
+            this.innerHTML = 'Javascript';
+        } ">Javascript</h1>
 
         <script>
 
