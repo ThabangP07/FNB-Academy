@@ -19,5 +19,33 @@
 
         <button>GO</button>
         <p id="outputText">Weather advice: </p>
+
+        <script>
+
+            function btnPressed(){
+                let weatherSelected = document.getElementById("weather").value;
+                let adviceText = "";
+
+                switch(weatherSelected) {
+                    case "sunny":
+                        adviceText = "Wear sunglasses and sunscreen.";
+                        break;
+                    case "windy":
+                        adviceText = "Hold onto your hat!";
+                        break;
+                    case "rainy":
+                        adviceText = "Don't forget your umbrella.";
+                        break;
+                    case "snowy":
+                        adviceText = "Wear a warm coat and boots.";
+                        break;
+                    case "cloudy":
+                        adviceText = "It might rain, so be prepared.";
+                        break;
+                    default:
+                        adviceText = "Weather not recognized.";
+                }
+            }
+        </script>
     </body>
 </html>
