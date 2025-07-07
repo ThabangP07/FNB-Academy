@@ -17,7 +17,7 @@
             <option value="cloudy">Cloudy</option>
         </select>
 
-        <button>GO</button>
+        <button onclick="btnPressed()">GO</button>
         <p id="outputText">Weather advice: </p>
 
         <script>
@@ -45,6 +45,8 @@
                     default:
                         adviceText = "Weather not recognized.";
                 }
+
+                document.getElementById("outputText").innerText = "Weather advice: " + adviceText;
             }
         </script>
     </body>
