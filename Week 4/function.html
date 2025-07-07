@@ -7,6 +7,7 @@
     </head>
     <body>
         <h1 id="heading" onclick="changeText()"">Javascript</h1>
+        <p id="addition"></p>
 
         <script>
 
@@ -16,6 +17,12 @@
                 } else {
                     document.getElementById("heading").innerHTML = 'Javascript';
                 }
+            }
+
+            addNumbers(5, 7);
+
+            function addNumbers(num1, num2) {
+                document.getElementById("addition").innerHTML = num1 + num2;
             }
             
         </script>
