@@ -9,7 +9,7 @@
         <table border="1">
             <tr>
                 <td colspan="4">
-                    <input type="text" id="inputBox" value="0">
+                    <input type="text" id="inputBox" value="">
                 </td>
             </tr>
             <tr>
@@ -42,7 +42,7 @@
 
         <script>
             function numberPressed(numBtn) {
-                document.getElementById("inputBox").value = numBtn;
+                document.getElementById("inputBox").value += numBtn;
             }
         </script>
     </body>
