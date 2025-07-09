@@ -32,7 +32,7 @@
             </tr>
             <tr>
                 <td onclick="numberPressed(0)" colspan="2">0</td>
-                <td>AC</td>
+                <td onclick="clearInput()">AC</td>
                 <td>/</td>
             </tr>
             <tr>
@@ -44,7 +44,7 @@
 
             // Function to handle number button clicks
             let isInputBoxEmpty = true;
-            
+
             function numberPressed(numBtn) {
 
                 if (isInputBoxEmpty) {
@@ -55,6 +55,12 @@
                     document.getElementById("inputBox").value += numBtn;
                 }
                 
+            }
+
+            // Function to handle the clear button
+            function clearInput() {
+                document.getElementById("inputBox").value = "0";
+                isInputBoxEmpty = true;
             }
 
             
