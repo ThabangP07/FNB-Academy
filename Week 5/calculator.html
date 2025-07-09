@@ -16,24 +16,24 @@
                 <td onclick="numberPressed(7)">7</td>
                 <td onclick="numberPressed(8)">8</td>
                 <td onclick="numberPressed(9)">9</td>
-                <td>x</td>
+                <td onclick="operatorPressed('*')">x</td>
             </tr>
             <tr>
                 <td onclick="numberPressed(4)">4</td>
                 <td onclick="numberPressed(5)">5</td>
                 <td onclick="numberPressed(6)">6</td>
-                <td>-</td>
+                <td onclick="operatorPressed('-')">-</td>
             </tr>
             <tr>
                 <td onclick="numberPressed(1)">1</td>
                 <td onclick="numberPressed(2)">2</td>
                 <td onclick="numberPressed(3)">3</td>
-                <td>+</td>
+                <td onclick="operatorPressed('+')">+</td>
             </tr>
             <tr>
                 <td onclick="numberPressed(0)" colspan="2">0</td>
                 <td onclick="clearInput()">AC</td>
-                <td>/</td>
+                <td onclick="operatorPressed('/')">/</td>
             </tr>
             <tr>
                 <td colspan="4">=</td>
@@ -63,6 +63,16 @@
                 isInputBoxEmpty = true;
             }
 
+            // Function to handle the operators button
+            let currentOperator;
+            let value1;
+            let value2;
+
+            function operatorPressed(operator) {
+                currentOperator = operator;
+                value1 = parseInt(document.getElementById("inputBox").value);
+                isInputBoxEmpty = true;
+            }
             
         </script>
     </body>
