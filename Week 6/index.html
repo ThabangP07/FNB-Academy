@@ -27,8 +27,11 @@
             for (let elem of data) {
                 output += `<tr>
                             <td><img src="${rootPath}controller/uploads/${data[elem].avatar}"></td>
+                            <td><h5>${data[elem].firstname}</h5></td>
+                            <td><h5>${data[elem].lastname}</h5></td>
                         </tr>`;
             }
+            output += "</table>";
         }
     </script>
 </body>
