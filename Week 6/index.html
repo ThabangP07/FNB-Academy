@@ -11,7 +11,8 @@
     <button id="refresh" type="button">Refresh</button>
     <button id="addContact" type="button">Add Contact</button>
 
-    <script src="config.js">
+    <script src="config.js"></script>
+    <script>
         const fetchContacts = () => {
             fetch(rootPath + "controller/get-contacts/")
             .then(response => {
@@ -24,15 +25,18 @@
 
         const displayOutput = (data) => {
             let output = "<table>";
-            for (let elem of data) {
+            for (let elem = 0; elem < data.length; elem++) {
                 output += `<tr>
-                            <td><img src="${rootPath}controller/uploads/${data[elem].avatar}"></td>
+                            <td><img src="${rootPath}controller/uploads/${data[elem].avatar}"/ width="50px" height="50px"></td>
                             <td><h5>${data[elem].firstname}</h5></td>
                             <td><h5>${data[elem].lastname}</h5></td>
                         </tr>`;
             }
             output += "</table>";
+            document.getElementById("table").innerHTML = output;
         }
+
+        document.getElementById("refresh").addEventListener('click', fetchContacts);
     </script>
 </body>
 </html>
