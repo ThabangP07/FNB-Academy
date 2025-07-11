@@ -10,7 +10,7 @@
     <div id="table">Contacts loading...</div>
     <button id="refresh" type="button">Refresh</button>
     <button id="addContact" type="button">Add Contact</button>
-    
+
     <script src="config.js">
         const fetchContacts = () => {
             fetch(rootPath + "controller/get-contacts/")
@@ -20,6 +20,15 @@
             .then(data => {
                 displayOutput(data);
             })
+        }
+
+        const displayOutput = (data) => {
+            let output = "<table>";
+            for (let elem of data) {
+                output += `<tr>
+                            <td><img src="${rootPath}controller/uploads/${data[elem].avatar}"></td>
+                        </tr>`;
+            }
         }
     </script>
 </body>
