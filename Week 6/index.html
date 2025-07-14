@@ -37,6 +37,11 @@
         }
 
         document.getElementById("refresh").addEventListener('click', fetchContacts);
+
+        function addContact() {
+            window.open("add-contact.html", "_self");
+        }
+        document.getElementById("addContact").addEventListener("click", addContact());
     </script>
 </body>
 </html>
