@@ -24,6 +24,9 @@
 
     <script src="config.js"></script>
     <script>
+        document.getElementById("submitForm").addEventListener('click', submitFormBtn)
+        document.getElementById("homeLink").addEventListener('click', homeLinkBtn);
+
         function submitFormBtn(event) {
             event.preventDefault();
             const form = new FormData(document.querySelector('#editForm'));
