@@ -28,6 +28,7 @@
 
     <script src="config.js"></script>
     <script>
+        document.getElementById("homeLink").addEventListener('click', homeLinkBtn);
         let id = getId();
 
         function getId() {
@@ -44,6 +45,10 @@
             .then(data => {
                 displayContact(data);
             });
+        }
+
+        function homeLinkBtn() {
+            window.open('index.html', '_self');
         }
     </script>
 </body>
