@@ -26,7 +26,7 @@
         const displayOutput = (data) => {
             let output = "<table>";
             for (let elem = 0; elem < data.length; elem++) {
-                output += `<tr>
+                output += `<tr onclick="editContact(${data[elem].id})">
                             <td><img src="${rootPath}controller/uploads/${data[elem].avatar}"/ width="50px" height="50px"></td>
                             <td><h5>${data[elem].firstname}</h5></td>
                             <td><h5>${data[elem].lastname}</h5></td>
@@ -42,6 +42,10 @@
             window.open("add-contact.html", "_self");
         }
         document.getElementById("addContact").addEventListener("click", addContact());
+
+        function editContact(id) {
+            window.open("edit-contact.html?id=" + id, "_self");
+        }
     </script>
 </body>
 </html>
