@@ -23,5 +23,12 @@
     <button id="homeLink" type="button">Home</button>
 
     <script src="config.js"></script>
+    <script>
+        function submitFormBtn(event) {
+            event.preventDefault();
+            const form = new FormData(document.querySelector('#editForm'));
+            form.append('apiKey', apiKey);
+        }
+    </script>
 </body>
 </html>
