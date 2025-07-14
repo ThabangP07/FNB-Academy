@@ -28,7 +28,15 @@
 
     <script src="config.js"></script>
     <script>
-        
+        let id = getId();
+
+        function getId() {
+            let url = window.location.href;
+            let position = new URLSearchParams(url.split('?')[1]);
+            return position.get('id');
+        }
+
+       
     </script>
 </body>
 </html>
