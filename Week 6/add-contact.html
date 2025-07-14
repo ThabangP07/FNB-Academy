@@ -41,12 +41,16 @@
             .then(function(data)) {
                 if (data === 1) {
                     alert('Contact added successfully');
-                    // Redirect to home page
+                    homeLinkBtn();
                 } else {
                     alert('Error adding contact: ' + data);
-                    // Redirect to home page
+                    homeLinkBtn();
                 }
             }
+        }
+
+        function homeLinkBtn(event) {
+            window.open('index.html', '_self');
         }
     </script>
 </body>
