@@ -50,6 +50,14 @@
         function homeLinkBtn() {
             window.open('index.html', '_self');
         }
+
+        function displayContact(data) {
+            document.getElementById("avatarImage").innerHTML = `<img src="${rootPath}controller/uploads/${data[0].avatar}" width="200px" height="200px">`;
+            document.getElementById("firstname").value = data[0].firstname;
+            document.getElementById("lastname").value = data[0].lastname;
+            document.getElementById("mobile").value = data[0].mobile;
+            document.getElementById("email").value = data[0].email;
+        }
     </script>
 </body>
 </html>
