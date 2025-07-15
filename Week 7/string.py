@@ -73,3 +73,13 @@ elif num1 == num2:
     print(f"{num1} is equal to {num2}")
 else:   
     print(f"{num1} is less than {num2}")
+    
+#Loops - for/while loops
+
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+    
+numbers = [1, 2, 3, 4, 5]
+for number in numbers:  
+    print(number)
