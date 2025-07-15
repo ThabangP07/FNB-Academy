@@ -10,7 +10,7 @@ print(message[0])
 print(message[1])
 print(message[-1])
 
-#Functions and methods
+#Built-in Functions and methods
 print(len(message))  # Length of the string 
 
 print(message.upper())  # Convert to uppercase
@@ -54,3 +54,13 @@ str1 = "Hello"
 str2 = "World"
 print(str1 + " " + str2)  # Concatenation
 print(str1 * 3)  # Repetition
+
+#Control flow - if/elif/else
+num = 10
+
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else: 
+    print("Negative number")
