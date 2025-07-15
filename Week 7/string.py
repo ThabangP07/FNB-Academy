@@ -33,6 +33,18 @@ myVariable = "World"
 user = "Logan"
 
 #invalid variable names
-1myVariable = "Hello"  # Cannot start with a number
-user-name = "Logan"  # Cannot contain hyphens
-user name = "Logan"  # Cannot contain spaces
+#1myVariable = "Hello"  # Cannot start with a number
+#user-name = "Logan"  # Cannot contain hyphens
+#user name = "Logan"  # Cannot contain spaces
+
+#Arithmetic Operators
+
+x = 10
+y = 5       
+
+print(x + y)  # Addition
+print(x - y)  # Subtraction     
+print(x * y)  # Multiplication
+print(x / y)  # Division
+print(x % y)  # Modulus
+print(x ** y)  # Exponentiation
