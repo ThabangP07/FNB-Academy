@@ -80,6 +80,27 @@ else:
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
+
+print("\n")
+
+for fruit in fruits:
+    if fruit == "banana":
+        continue  # Skip the banana
+    print(fruit)
+    
+print("\n")
+
+for fruit in fruits:
+    if fruit == "banana":
+        break  # Stop the loop when banana is found
+    print(fruit)
+    
+print("\n")
+
+for fruit in fruits:
+    if fruit == "banana":
+        pass  # Do nothing for banana
+    print(fruit)
     
 numbers = [1, 2, 3, 4, 5]
 for number in numbers:  
