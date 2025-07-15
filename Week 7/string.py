@@ -76,6 +76,7 @@ else:
     
 #Loops - for/while loops
 
+# --------------- FOR LOOP ---------------
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
@@ -83,3 +84,10 @@ for fruit in fruits:
 numbers = [1, 2, 3, 4, 5]
 for number in numbers:  
     print(number)
+
+# --------------- WHILE LOOP ---------------
+num = 1
+
+while num <= 5:
+    print(num)
+    num += 1
