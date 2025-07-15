@@ -16,3 +16,5 @@ print(message.lower())  # Convert to lowercase
 
 print(len(message))  # Length of the string 
 
+print(message.split())  # Split the string into a list of words
+
