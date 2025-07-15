@@ -18,3 +18,7 @@ print(len(message))  # Length of the string
 
 print(message.split())  # Split the string into a list of words
 
+#numerical values
+
+num = 3
+print(type(num))  # Check the type of num
