@@ -22,3 +22,6 @@ print(message.split())  # Split the string into a list of words
 
 num = 3
 print(type(num))  # Check the type of num
+
+num2 = 3.14
+print(type(num2))  # Check the type of num2
