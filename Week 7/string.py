@@ -10,4 +10,9 @@ print(message[0])
 print(message[1])
 print(message[-1])
 
+#Functions and methods
+print(message.upper())  # Convert to uppercase
+print(message.lower())  # Convert to lowercase
+
 print(len(message))  # Length of the string 
+
