@@ -48,3 +48,8 @@ print(x * y)  # Multiplication
 print(x / y)  # Division
 print(x % y)  # Modulus
 print(x ** y)  # Exponentiation
+
+#operators on strings
+str1 = "Hello"
+str2 = "World"
+print(str1 + " " + str2)  # Concatenation
