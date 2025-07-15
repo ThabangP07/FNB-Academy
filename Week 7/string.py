@@ -11,11 +11,10 @@ print(message[1])
 print(message[-1])
 
 #Functions and methods
-print(message.upper())  # Convert to uppercase
-print(message.lower())  # Convert to lowercase
-
 print(len(message))  # Length of the string 
 
+print(message.upper())  # Convert to uppercase
+print(message.lower())  # Convert to lowercase
 print(message.split())  # Split the string into a list of words
 
 #numerical values
@@ -25,3 +24,15 @@ print(type(num))  # Check the type of num
 
 num2 = 3.14
 print(type(num2))  # Check the type of num2
+
+# Variables
+
+#valid variable names
+my_variable = "Hello"
+myVariable = "World"    
+user = "Logan"
+
+#invalid variable names
+1myVariable = "Hello"  # Cannot start with a number
+user-name = "Logan"  # Cannot contain hyphens
+user name = "Logan"  # Cannot contain spaces
