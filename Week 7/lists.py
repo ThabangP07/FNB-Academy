@@ -17,3 +17,12 @@ print(fruits)
 
 fruits.remove("cherry")  # Remove cherry from the list
 print(fruits)
+
+fruits.sort()  # Sort the list alphabetically
+print(fruits)
+
+fruits.reverse()  # Reverse the order of the list
+print(fruits)
+
+fruits.sort(reverse=True)  # Sort the list in reverse order
+print(fruits)
