@@ -17,3 +17,12 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)
+
+result_factorial = factorial(5)  # Example usage of the factorial function
+print(f"The factorial of 5 is: {result_factorial}")
+    
+def greeting(name, message = "Hello"):
+    """Function to greet a person with a custom message."""
+    print(f"{message}, {name}!")
+
+greeting("Mary")
