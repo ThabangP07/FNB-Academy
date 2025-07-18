@@ -10,3 +10,10 @@ def add_numbers(a, b):
 
 result = add_numbers(5, 10)  # Example usage of the add_numbers function
 print(f"The sum is: {result}")
+
+def factorial(n):
+    """Function to calculate the factorial of a number."""
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
